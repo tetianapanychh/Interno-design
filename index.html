@@ -1,150 +1,634 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230905140658">
+	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Interno</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Interno</h1>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">HomePage</a></li>
-			<li><a target="_blank" href="services.html">Services</a></li>
-			<li><a target="_blank" href="service.html">Service</a></li>
-			<li><a target="_blank" href="about.html">About</a></li>
-			<li><a target="_blank" href="pricing.html">Pricing&plan</a></li>
-			<li><a target="_blank" href="faqs.html">Faq's</a></li>
-			<li><a target="_blank" href="contacts.html">Contacts</a></li>
-			<li><a target="_blank" href="blog.html">Blog</a></li>
-			<li><a target="_blank" href="article.html">Article</a></li>
-			<li><a target="_blank" href="projects.html">Projects</a></li>
-			<li><a target="_blank" href="project.html">Project</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a aria-label="Link to main page" href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="Interno logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">About us</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Services</a>
+							</li>
+							<li class="menu__item">
+								<a href="projects.html" class="menu__link">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a href="blog.html" class="menu__link">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<button aria-label="Button for menu burger" type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__content content-block">
+						<h1 class="content-block__title title title_big animation animation_down anim-no-hide">Let Your Home
+							Be Unique</h1>
+						<div class="content-block__text text animation animation_down anim-no-hide">
+							<p>
+								There are many variations of the passages of lorem Ipsum fromavailable,variations of the
+								passages.
+							</p>
+						</div>
+						<a href="pricing.html" class="content-block__button button button_dark _icon-arrow animation animation_down anim-no-hide">Get
+							started</a>
+					</div>
+				</div>
+			</section>
+			<div class="page__services services-block">
+				<div class="services-block__container">
+					<div class="services-block__item service-item">
+						<h3 class="service-item__title title title_ultra-small animation animation_down">
+							<a href="service.html">Project plan</a>
+						</h3>
+						<div class="service-item__text text animation animation_down">
+							<p>
+								There are many variations of the passages of lorem Ipsum from available, majority.
+							</p>
+						</div>
+						<a href="service.html" class="service-item__link _icon-arrow animation animation_down">Read more</a>
+					</div>
+					<div class="services-block__item service-item">
+						<h3 class="service-item__title title title_ultra-small animation animation_down">
+							<a href="service.html">Interior work</a>
+						</h3>
+						<div class="service-item__text text animation animation_down">
+							<p>
+								There are many variations of the passages of lorem Ipsum from available, majority.
+							</p>
+						</div>
+						<a href="service.html" class="service-item__link _icon-arrow animation animation_down">Read more</a>
+					</div>
+					<div class="services-block__item service-item">
+						<h3 class="service-item__title title title_ultra-small animation animation_down">
+							<a href="service.html">Realization</a>
+						</h3>
+						<div class="service-item__text text animation animation_down">
+							<p>
+								There are many variations of the passages of lorem Ipsum from available, majority.
+							</p>
+						</div>
+						<a href="service.html" class="service-item__link _icon-arrow animation animation_down">Read more</a>
+					</div>
+				</div>
+			</div>
+			<section class="page__about about-block">
+				<div class="about-block__container">
+					<div class="about-block__body about-item">
+						<div class="about-item__content content-block">
+							<h2 class="content-block__title title title_small animation animation_down">We Create The Art
+								Of Stylish Living Stylishly
+							</h2>
+							<div class="content-block__text text animation animation_down anim-no-g">
+								<p>
+									It is a long established fact that a reader will be distracted by the of readable content of
+									a page when lookings at its layouts the points of using
+									that it has a more-or-less normal.
+								</p>
+							</div>
+							<div class="about-block__info">
+								<div class="about-block__call call-about animation animation_down">
+									<div class="call-about__icon">
+										<img src="img/homepage/about/icon-call.svg" alt="Icon">
+									</div>
+									<div class="call-about__body animation animation_down">
+										<a href="tel:012345678" class="call-about__number">012345678</a>
+										<div class="call-about__text text">Call Us Anytime</div>
+									</div>
+								</div>
+								<button data-popup="#popup-start" type="button" class="content-block__button button button_dark _icon-arrow animation animation_down">Get
+									Free Estimate</button>
+							</div>
+						</div>
+						<div class="about-block__image-ibg about-item__image-ibg animation animation_right anim-no-hide">
+							<picture><source srcset="img/homepage/about/image.webp" type="image/webp"><img src="img/homepage/about/image.jpg" alt="Image of interior"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<h2 class="testimonials__title title title_small animation animation_down">
+						What People Thinks About Us
+					</h2>
+					<div class="testimonials__items">
+						<div class="testimonials__item item-testimonial">
+							<div class="item-testimonial__client client-testimonial animation animation_down">
+								<div class="client-testimonial__avatar">
+									<picture><source srcset="img/homepage/testimonials/nattasha-mith.webp" type="image/webp"><img src="img/homepage/testimonials/nattasha-mith.jpg" alt="Nattasha Mith"></picture>
+								</div>
+								<div class="client-testimonial__body">
+									<div class="client-testimonial__name title title_ultra-small">Nattasha Mith</div>
+									<div class="client-testimonial__city">Sydney, Australia</div>
+								</div>
+							</div>
+							<div class="item-testimonial__text text animation animation_down">
+								<p>
+									Lorem Ipsum is simply dummy
+									text of the typesetting industry.
+									Ipsum has been.
+								</p>
+							</div>
+						</div>
+						<div class="testimonials__item item-testimonial">
+							<div class="item-testimonial__client client-testimonial animation animation_down">
+								<div class="client-testimonial__avatar">
+									<picture><source srcset="img/homepage/testimonials/ray-galario.webp" type="image/webp"><img src="img/homepage/testimonials/ray-galario.jpg" alt="Ray Galario"></picture>
+								</div>
+								<div class="client-testimonial__body">
+									<div class="client-testimonial__name title title_ultra-small">Ray Galario</div>
+									<div class="client-testimonial__city">New York, USA</div>
+								</div>
+							</div>
+							<div class="item-testimonial__text text animation animation_down">
+								<p>
+									Lorem Ipsum is simply dummy
+									text of the typesetting industry.
+									Ipsum has been scrambled it
+									to make a type book.
+								</p>
+							</div>
+						</div>
+						<div class="testimonials__item item-testimonial">
+							<div class="item-testimonial__client client-testimonial animation animation_down">
+								<div class="client-testimonial__avatar">
+									<picture><source srcset="img/homepage/testimonials/benny-roll.webp" type="image/webp"><img src="img/homepage/testimonials/benny-roll.jpg" alt="Benny Roll"></picture>
+								</div>
+								<div class="client-testimonial__body">
+									<div class="client-testimonial__name title title_ultra-small">Benny Roll</div>
+									<div class="client-testimonial__city">New York, USA</div>
+								</div>
+							</div>
+							<div class="item-testimonial__text text animation animation_down">
+								<p>
+									Lorem Ipsum is simply dummy
+									text of the typesetting industry.
+									Ipsum has been scrambled.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__clients clients">
+				<div class="clients__container">
+					<div class="clients__slider swiper">
+						<div class="clients__wrapper swiper-wrapper">
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/modern-home.svg" alt="Client - Modern home">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/style-vintage-interior.svg" alt="Client - Style vintage interior">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/brand.svg" alt="Client - Brand">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/nature-home.svg" alt="Client - Nature home">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/classic-design-studio.svg" alt="Client - Classic design studio">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/modern-home.svg" alt="Client - Modern home">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/style-vintage-interior.svg" alt="Client - Style vintage interior">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/brand.svg" alt="Client - Brand">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/nature-home.svg" alt="Client - Nature home">
+							</div>
+							<div class="clients__slide swiper-slide">
+								<img src="img/homepage/clients/classic-design-studio.svg" alt="Client - Classic design studio">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__projects projects-block">
+				<div class="projects-block__container">
+					<div class="projects-block__header header-block">
+						<h2 class="header-block__title title title_small animation animation_down">Follow our projects</h2>
+						<div class="header-block__text text animation animation_down">
+							<p>
+								It is a long established fact that a reader will be distracted by the of readable content of
+								page lookings at its layouts points.
+							</p>
+						</div>
+					</div>
+					<div class="projects-block__items">
+						<div class="projects-block__item item-project">
+							<a aria-label="Link to the project" href="project.html" class="projects-block__image projects-block__image_1 item-project__image">
+								<picture><source srcset="img/homepage/projects/kitchen-01.webp" type="image/webp"><img src="img/homepage/projects/kitchen-01.jpg" alt="Image of kitchen interior design"></picture>
+							</a>
+							<div class="item-project__body animation animation_down">
+								<div class="item-project__text-block">
+									<h3 class="item-project__title title title_ultra-small">
+										<a href="project.html">
+											Modern kitchen
+										</a>
+									</h3>
+									<div class="item-project__category text">Decor / Architecture</div>
+								</div>
+								<a href="project.html" class="item-project__link arrow-button arrow-button_border _icon-arrow-small" aria-label="Link to project page"></a>
+							</div>
+						</div>
+						<div class="projects-block__item item-project">
+							<a aria-label="Link to the project" href="project.html" class="projects-block__image projects-block__image_2 item-project__image">
+								<picture><source srcset="img/homepage/projects/kitchen-02.webp" type="image/webp"><img src="img/homepage/projects/kitchen-02.jpg" alt="Image of kitchen interior design"></picture>
+							</a>
+							<div class="item-project__body animation animation_down">
+								<div class="item-project__text-block">
+									<h3 class="item-project__title title title_ultra-small">
+										<a href="project.html">
+											Modern kitchen
+										</a>
+									</h3>
+									<div class="item-project__category text">Decor / Architecture</div>
+								</div>
+								<a href="project.html" class="item-project__link arrow-button arrow-button_border _icon-arrow-small" aria-label="Link to project page"></a>
+							</div>
+						</div>
+						<div class="projects-block__item item-project">
+							<a aria-label="Link to the project" href="project.html" class="projects-block__image projects-block__image_3 item-project__image">
+								<picture><source srcset="img/homepage/projects/kitchen-03.webp" type="image/webp"><img src="img/homepage/projects/kitchen-03.jpg" alt="Image of kitchen interior design"></picture>
+							</a>
+							<div class="item-project__body animation animation_down">
+								<div class="item-project__text-block">
+									<h3 class="item-project__title title title_ultra-small">
+										<a href="project.html">
+											Modern kitchen
+										</a>
+									</h3>
+									<div class="item-project__category text">Decor / Architecture</div>
+								</div>
+								<a href="project.html" class="item-project__link arrow-button arrow-button_border _icon-arrow-small" aria-label="Link to project page"></a>
+							</div>
+						</div>
+						<div class="projects-block__item item-project">
+							<a aria-label="Link to the project" href="project.html" class="projects-block__image projects-block__image_4 item-project__image">
+								<picture><source srcset="img/homepage/projects/kitchen-04.webp" type="image/webp"><img src="img/homepage/projects/kitchen-04.jpg" alt="Image of kitchen interior design"></picture>
+							</a>
+							<div class="item-project__body animation animation_down">
+								<div class="item-project__text-block">
+									<h3 class="item-project__title title title_ultra-small">
+										<a href="project.html">
+											Modern kitchen
+										</a>
+									</h3>
+									<div class="item-project__category text">Decor / Architecture</div>
+								</div>
+								<a href="project.html" class="item-project__link arrow-button arrow-button_border _icon-arrow-small" aria-label="Link to project page"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__counter counter">
+				<div data-watch class="counter__container">
+					<div class="counter__item">
+						<div data-digits-counter class="counter__number title title_big">12</div>
+						<div class="counter__text text">Years Of Experiance</div>
+					</div>
+					<div class="counter__item">
+						<div data-digits-counter class="counter__number title title_big">85</div>
+						<div class="counter__text text">Success Project</div>
+					</div>
+					<div class="counter__item">
+						<div data-digits-counter class="counter__number title title_big">15</div>
+						<div class="counter__text text">Active Project</div>
+					</div>
+					<div class="counter__item">
+						<div data-digits-counter class="counter__number title title_big">95</div>
+						<div class="counter__text text">Happy Customers</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__articles articles">
+				<div class="articles__container">
+					<div class="articles__header header-block">
+						<h2 class="header-block__title title title_small animation animation_down">Articles & News</h2>
+						<div class="header-block__text text animation animation_down">
+							<p>
+								It is a long established fact that a reader will be distracted by the of readable content of a
+								page when lookings at its layouts the points of using.
+							</p>
+						</div>
+					</div>
+					<div class="articles__items">
+						<article class="articles__item item-article">
+							<div class="item-article__image-ibg">
+								<a aria-label="Link to the article" href="article.html" class="item-article__image">
+									<picture><source srcset="img/blog/items/item-01.webp" type="image/webp"><img src="img/blog/items/item-01.jpg" alt="Image of article"></picture>
+								</a>
+								<div class="item-article__label">Kitchen design</div>
+							</div>
+							<h3 class="item-article__title title title_ultra-small animation animation_down">
+								<a href="article.html">Let’s Get Solution For Building Construction Work</a>
+							</h3>
+							<div class="item-article__info animation animation_down">
+								<div class="item-article__date">26 December, 2022</div>
+								<a href="article.html" class="item-article__link arrow-button arrow-button_solid _icon-arrow-small" aria-label="Link to article"></a>
+							</div>
+						</article>
+						<article class="articles__item item-article">
+							<div class="item-article__image-ibg">
+								<a aria-label="Link to the article" href="article.html" class="item-article__image">
+									<picture><source srcset="img/blog/items/item-02.webp" type="image/webp"><img src="img/blog/items/item-02.jpg" alt="Image of article"></picture>
+								</a>
+								<div class="item-article__label">Livingroom design</div>
+							</div>
+							<h3 class="item-article__title title title_ultra-small animation animation_down">
+								<a href="article.html">Low Cost Latest Invented Interior Designing
+									Ideas</a>
+							</h3>
+							<div class="item-article__info animation animation_down">
+								<div class="item-article__date">22 December, 2022</div>
+								<a href="article.html" class="item-article__link arrow-button arrow-button_solid _icon-arrow-small" aria-label="Link to article"></a>
+							</div>
+						</article>
+						<article class="articles__item item-article">
+							<div class="item-article__image-ibg">
+								<a aria-label="Link to the article" href="article.html" class="item-article__image">
+									<picture><source srcset="img/blog/items/item-03.webp" type="image/webp"><img src="img/blog/items/item-03.jpg" alt="Image of article"></picture>
+								</a>
+								<div class="item-article__label">Interior design</div>
+							</div>
+							<h3 class="item-article__title title title_ultra-small animation animation_down">
+								<a href="article.html">Best For Any Office & Business Interior
+									Solution</a>
+							</h3>
+							<div class="item-article__info animation animation_down">
+								<div class="item-article__date">25 December, 2022</div>
+								<a href="article.html" class="item-article__link arrow-button arrow-button_solid _icon-arrow-small" aria-label="Link to article"></a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__join join">
+				<div class="join__container">
+					<div class="join__content content-block content-block_light">
+						<h2 class="content-block__title title title_small animation animation_down">Wanna join the interno?</h2>
+						<div class="content-block__text text animation animation_down">
+							<p>
+								It is a long established fact will be distracted.
+							</p>
+						</div>
+						<a href="contacts.html" class="content-block__button button button_light _icon-arrow animation animation_down">Contact With Us</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers="767.98, max" data-one-spoller class="footer__top">
+					<div class="footer__info">
+						<img src="img/logo.svg" alt="Interno logo" class="footer__logo">
+						<div class="footer__text">
+							<p>
+								It is a long established fact that a reader will be distracted lookings.
+							</p>
+						</div>
+						<ul class="footer__social social">
+							<li class="social__item">
+								<a href="#" class="social__link _icon-facebook" aria-label="Link to Facebook account"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link _icon-twitter" aria-label="Link to Twitter account"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link _icon-linkedin" aria-label="Link to LinkedIn account"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link _icon-instagram" aria-label="Link to Instagram account"></a>
+							</li>
+						</ul>
+					</div>
+					<details class="footer__pages">
+						<summary class="footer__title title title_ultra-small">Pages</summary>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="about.html" class="footer__link">
+									About us
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="services.html" class="footer__link">
+									Services
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="projects.html" class="footer__link">
+									Our projects
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="pricing.html" class="footer__link">
+									Pricing & plan
+								</a>
+							</li>
+							<li class="footer__item">
+								<a href="contacts.html" class="footer__link">
+									Contact us
+								</a>
+							</li>
+						</ul>
+					</details>
+					<details class="footer__contact">
+						<summary class="footer__title title title_ultra-small">Contacts</summary>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">55 East Birchwood Ave. Brooklyn, New York 11201</a>
+							</li>
+							<li class="footer__item">
+								<a href="mailto:contact@interno.com" class="footer__link">contact@interno.com</a>
+							</li>
+							<li class="footer__item">
+								<a href="tel:1234567890" class="footer__link">(123) 456 - 7890</a>
+							</li>
+						</ul>
+					</details>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy text">Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 1s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				const preloaderTemplate = `
+				<div class="fls-preloader">
+					<div class="fls-preloader__body">
+						<div class="fls-preloader__inner">
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+							<div class="fls-preloader__loader">
+								<div class="fls-preloader__dot"></div>
+							</div>
+						</div>
+						<div class="fls-preloader__text">
+							Loading
+						</div>
+					</div>
+				</div>`;
+
+				document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+				const preloader = document.querySelector('.fls-preloader');
+				const htmlDocument = document.documentElement;
+
+				htmlDocument.classList.add('loading');
+				htmlDocument.classList.add('lock');
+
+				window.addEventListener('load', addLoadedClass);
+
+				function addLoadedClass() {
+					htmlDocument.classList.add('loaded');
+					htmlDocument.classList.remove('lock');
+					htmlDocument.classList.remove('loading');
+
+					preloaderContainer.classList.add('fls-preloader--loaded');
+
+					setTimeout(() => {
+						preloader.remove();
+						preloaderContainer.remove();
+					}, 600);
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20230905140658"></script>
+	<!-- ------------------------ -->
+	<div id="popup-video" aria-hidden="true" class="popup popup-video">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-video__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close">x</button>
+				</div>
+				<div class="popup-video__body">
+					<video controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------ -->
+	<div id="popup-start" aria-hidden="true" class="popup popup-start">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-start__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close">x</button>
+				</div>
+				<div class="popup-start__body">
+					<div class="popup-start__title title title_small">Your personal informartion</div>
+					<form data-dev data-popup-message="#popup-confirm" class="popup-start__form form">
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Name" class="form__input input">
+						<input data-required="" autocomplete="off" type="text" name="form[]" placeholder="Phone" class="form__input input">
+						<textarea data-required placeholder="Hello, I am Intrested in.." class="form__textarea input"></textarea>
+						<button type="submit" class="form__button button button_dark _icon-arrow">Send</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------ -->
+	<div id="popup-confirm" aria-hidden="true" class="popup popup-confirm">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-confirm__content">
+				<div class="popup__top">
+					<button data-close type="button" class="popup__close">x</button>
+				</div>
+				<div class="popup-confirm__body">
+					<div class="popup-confirm__title title title_small">We’ll contact you!</div>
+					<div class="popup-confirm__text text">
+						Your details were sent to our operator who will contact you as soon as possible.
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: white;
-		background-color: #dadada;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #9d56cf;
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #9b5dca;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #9d56cf;
-		font-size: 2.5rem;
-		margin: 0px 0px 3rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		font-size: 1.5rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 3.5rem 1.25rem;
-		color: #9d56cf;
-	}
-
-	.rootpage__list li {
-		font-size: 1.25rem;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage__list li {
-			font-size: 1rem;
-		}
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-</style>
 
 </html>
